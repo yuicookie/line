@@ -8,11 +8,17 @@
     -webkit-user-drag:none;
     -khtml-user-drag:none;
     } */
-  
+
+html {
+height: 100%;
+}    
+body {
+height: 100%;
+margin: 0 5%;
+}
 /* 背景画像 */
 .container {
-width: 98%;
-height: 98vh;
+height: 98%;
 background-image: url(img/lobby_epN01.png);
 background-repeat: no-repeat;
 background-size: cover;
