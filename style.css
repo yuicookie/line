@@ -9,11 +9,11 @@
     -khtml-user-drag:none;
     } */
 
-html {
-  height: 100%;
-}    
 body {
-  height: 100%;
+  margin: 0;
+}  
+main {
+  margin: 0;
 }
 /* 背景画像 */
 .container {
@@ -28,60 +28,40 @@ body {
   background-position: center;
   z-index: 0;
 }
-/* タイトル画像 */
+/* タイトル範囲 */
 .title_area {
   position: relative;
   width: 100%;
-  height: 100%;
   min-width: 1920px;
 }
+/* タイトル画像 */
 .title {
-  position: absolute;
-  height: 100%;
-  margin: 0 8%;
-  top: 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: 5;
+  width: 100%;
+  z-index: 0;
 }
 .kiyaku {
   position: absolute;
-  height: 100%;
-  margin: 0 8%;
+  width: 100%;
   top: 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: 6;
+  left: 0px;
+  z-index: 1;
 }
 .agree {
   position: absolute;
-  height: 10%;
-  top :60%;
-  left: 43%;
-  /* height: 130px;
-  top: 560px;
-  left: 750px; */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: 7;
-}
-/* @media screen and (max-width: 320px) and (max-width: 480px) {
-.agree {
-  position: absolute;
-  height: 10%;
-  top :60%;
-  left: 143%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: 7;
-}
-} */
+  top: 780px;
+  left: calc(100% * 770 / 1920);
+  width: calc(100% * 380 / 1920);
+  z-index: 2;
 
-/* .opacity{
+  height: calc(100vw * 120 / 1920);
+  min-height: 120px;
+  transform: translateY(calc(100vw * 120 / 1920 * -1));
+}
+@media screen and (max-width: 1919px) {
+  .agree {
+    transform: translateY(-120px);
+  }
+}/* .opacity{
   height: 0;
   opacity: 0;
   transition: all .5s ease;
