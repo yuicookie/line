@@ -14,11 +14,12 @@ html {
 }    
 body {
   height: 100%;
-  margin: 0 8%;
 }
 /* 背景画像 */
 .container {
   height: 97%;
+  margin: 0 8%;
+  top: 0px;
   background-image: url(img/lobby_epN01.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,7 +30,8 @@ body {
 .title {
   position: absolute;
   height: 97%;
-  top: 0%;
+  margin: 0 8%;
+  top: 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -38,7 +40,8 @@ body {
 .kiyaku {
   position: absolute;
   height: 97%;
-  top: 0%;
+  margin: 0 8%;
+  top: 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -46,9 +49,9 @@ body {
 }
 .agree {
   position: absolute;
-  height: 15%;
-  top: 60%;
-  left: 38%;
+  height: 130px;
+  top: 560px;
+  left: 750px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
