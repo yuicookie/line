@@ -9,16 +9,23 @@
 </head>
 
 <!-- 画像ドラッグ禁止 -->
-<body>
-<!-- <body onMouseDown="return false;" onSelectStart="return false"> -->
+<!-- <body> -->
+<body onMouseDown="return false;" onSelectStart="return false">
+<main>
 <div class="title_area">
   <img id="title" class="title" src="img/title.png">
   <img id="kiyaku" class="kiyaku" src="img/kiyaku.png">
-  <img id="agree" class="agree" src="img/agree.png">
+  <div id="kiyaku_title" class="kiyaku_title">利用規約</div>
+  <div id="kiyaku_setumei" class="kiyaku_setumei">・BGMが鳴ります！<br>・LINEバージョンを懐かしむため<br>　だけのサイトです。</div>
+  <img id="agree" class="agree" src="img/agree.png" onclick="agree()">
+  <img id="agree_check" class="agree_check" src="img/agree_check.png" onclick="agree_check()">
+  <img id="ok_btn" class="ok_btn" src="img/ok_btn.png" onclick="ok_btn()">
 </div>
 <!-- <button id="bgm">再生</button> -->
 <!-- ロビー画像 -->
-  <div class="container"></div>
+  <div id="container" class="container"></div>
+  <img id="lobby_epN01" class="lobby_epN01" src="img/lobby_epN01.png">
+</main>
 </body>
 <script type="text/javascript" src="script.js"></script>
 

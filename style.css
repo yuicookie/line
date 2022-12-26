@@ -1,5 +1,5 @@
 /* 文字選択禁止 */
-/* body{
+body{
     user-select:none;
     -webkit-user-select:none;
     -ms-user-select: none;
@@ -7,7 +7,7 @@
     -khtml-user-select:none;
     -webkit-user-drag:none;
     -khtml-user-drag:none;
-    } */
+    }
 
 body {
   margin: 0;
@@ -16,16 +16,9 @@ main {
   margin: 0;
 }
 /* 背景画像 */
-.container {
-  position: relative;
+.lobby_epN01 {
   display: none;
-  height: 100%;
-  margin: 0 8%;
-  top: 0px;
-  background-image: url(img/lobby_epN01.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  width: 100%;
   z-index: 0;
 }
 /* タイトル範囲 */
@@ -46,13 +39,27 @@ main {
   left: 0px;
   z-index: 1;
 }
+.kiyaku_title{
+  position: absolute;
+  font-weight: bold;
+  font-size: 70px;
+  top: 140px;
+  left: 830px;
+  z-index: 1;
+}
+.kiyaku_setumei{
+  position: absolute;
+  font-size: 40px;
+  top: 400px;
+  left: 670px;
+  z-index: 1;
+}
 .agree {
   position: absolute;
   top: 780px;
   left: calc(100% * 770 / 1920);
   width: calc(100% * 380 / 1920);
   z-index: 2;
-
   height: calc(100vw * 120 / 1920);
   min-height: 120px;
   transform: translateY(calc(100vw * 120 / 1920 * -1));
@@ -61,7 +68,39 @@ main {
   .agree {
     transform: translateY(-120px);
   }
-}/* .opacity{
+}
+.agree_check {
+  position: absolute;
+  display: none;
+  top: 780px;
+  left: calc(100% * 770 / 1920);
+  width: calc(100% * 380 / 1920);
+  z-index: 2;
+  height: calc(100vw * 120 / 1920);
+  min-height: 120px;
+  transform: translateY(calc(100vw * 120 / 1920 * -1));
+}
+@media screen and (max-width: 1919px) {
+  .agree_check {
+    transform: translateY(-120px);
+  }
+}
+.ok_btn {
+  position: absolute;
+  top: 930px;
+  left: calc(100% * 820 / 1920);
+  width: calc(100% * 280 / 1920);
+  z-index: 2;
+  height: calc(100vw * 120 / 1920);
+  min-height: 120px;
+  transform: translateY(calc(100vw * 120 / 1920 * -1));
+}
+@media screen and (max-width: 1919px) {
+  .ok_btn {
+    transform: translateY(-120px);
+  }
+}
+/* .opacity{
   height: 0;
   opacity: 0;
   transition: all .5s ease;
