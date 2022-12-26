@@ -27,6 +27,11 @@ html {
   z-index: 0;
 }
 /* タイトル画像 */
+.title_area {
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+}
 .title {
   position: absolute;
   height: 97%;
