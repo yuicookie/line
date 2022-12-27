@@ -15,9 +15,6 @@ function active(obj) {
   }
 }
 
-$(function() {
-  $("img").wrap('<div id="img_wrap"></div>');
-});
 
 // 右クリック禁止
 $("body").bind
