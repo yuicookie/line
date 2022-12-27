@@ -1,0 +1,120 @@
+/* 文字選択禁止 */
+body{
+  user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select: none;
+  -moz-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-drag:none;
+  -khtml-user-drag:none;
+}
+img {
+  user-select:none;
+}
+
+body {
+  margin: 0;
+}  
+main {
+  margin: 0;
+}
+/* 背景画像 */
+.lobby_epN01 {
+  display: none;
+  width: 100%;
+  z-index: 0;
+}
+/* タイトル範囲 */
+.title_area {
+  position: relative;
+  width: 100%;
+  min-width: 1920px;
+}
+/* タイトル画像 */
+.title {
+  width: 100%;
+  z-index: 0;
+}
+.kiyaku {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.kiyaku_title{
+  position: absolute;
+  font-weight: bold;
+  font-size: 70px;
+  top: 140px;
+  left: 830px;
+  z-index: 1;
+}
+.kiyaku_setumei{
+  position: absolute;
+  font-size: 40px;
+  top: 400px;
+  left: 670px;
+  z-index: 1;
+}
+.agree,.agree_black {
+  position: absolute;
+  top: 780px;
+  left: calc(100% * 770 / 1920);
+  width: calc(100% * 380 / 1920);
+  z-index: 2;
+  height: calc(100vw * 120 / 1920);
+  min-height: 120px;
+  transform: translateY(calc(100vw * 120 / 1920 * -1));
+}
+@media screen and (max-width: 1919px) {
+  .agree,.agree_black {
+    transform: translateY(-120px);
+  }
+}
+.agree_black{
+  display: none;
+}
+.agree_check {
+  position: absolute;
+  display: none;
+  top: 780px;
+  left: calc(100% * 770 / 1920);
+  width: calc(100% * 380 / 1920);
+  z-index: 2;
+  height: calc(100vw * 120 / 1920);
+  min-height: 120px;
+  transform: translateY(calc(100vw * 120 / 1920 * -1));
+}
+@media screen and (max-width: 1919px) {
+  .agree_check {
+    transform: translateY(-120px);
+  }
+}
+.ok_btn,.ok_btn_black {
+  position: absolute;
+  top: 930px;
+  left: calc(100% * 820 / 1920);
+  width: calc(100% * 280 / 1920);
+  z-index: 2;
+  height: calc(100vw * 120 / 1920);
+  min-height: 120px;
+  transform: translateY(calc(100vw * 120 / 1920 * -1));
+}
+@media screen and (max-width: 1919px) {
+  .ok_btn,.ok_btn_black {
+    transform: translateY(-120px);
+  }
+}
+.ok_btn{
+  display: none;
+}
+/* .opacity{
+  height: 0;
+  opacity: 0;
+  transition: all .5s ease;
+}
+.opacity.active{
+  height: 100%;
+  opacity: 1;
+} */
