@@ -54,7 +54,7 @@ main {
   left: 670px;
   z-index: 1;
 }
-.agree {
+.agree,.agree_black {
   position: absolute;
   top: 780px;
   left: calc(100% * 770 / 1920);
@@ -65,9 +65,12 @@ main {
   transform: translateY(calc(100vw * 120 / 1920 * -1));
 }
 @media screen and (max-width: 1919px) {
-  .agree {
+  .agree,.agree_black {
     transform: translateY(-120px);
   }
+}
+.agree_black{
+  display: none;
 }
 .agree_check {
   position: absolute;
@@ -85,7 +88,7 @@ main {
     transform: translateY(-120px);
   }
 }
-.ok_btn {
+.ok_btn,.ok_btn_black {
   position: absolute;
   top: 930px;
   left: calc(100% * 820 / 1920);
@@ -96,9 +99,12 @@ main {
   transform: translateY(calc(100vw * 120 / 1920 * -1));
 }
 @media screen and (max-width: 1919px) {
-  .ok_btn {
+  .ok_btn,.ok_btn_black {
     transform: translateY(-120px);
   }
+}
+.ok_btn{
+  display: none;
 }
 /* .opacity{
   height: 0;
