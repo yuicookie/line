@@ -8,12 +8,14 @@ body{
   -webkit-user-drag:none;
   -khtml-user-drag:none;
 }
+/* スマホ画像長押し禁止 */
 img {
   user-select:none;
+  -webkit-touch-callout:none;
   -webkit-user-select:none;
+  -moz-touch-callout:none;
   -moz-user-select:none;
 }
-
 body {
   margin: 0;
 }  
@@ -111,12 +113,3 @@ main {
 .ok_btn{
   display: none;
 }
-/* .opacity{
-  height: 0;
-  opacity: 0;
-  transition: all .5s ease;
-}
-.opacity.active{
-  height: 100%;
-  opacity: 1;
-} */
