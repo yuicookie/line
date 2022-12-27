@@ -8,13 +8,13 @@ body{
   -webkit-user-drag:none;
   -khtml-user-drag:none;
 }
-img {
+/*img {
   -webkit-touch-callout:none;
   -webkit-user-select:none;
   -moz-touch-callout:none;
   -moz-user-select:none;
   user-select:none;
-}
+}*/
 
 body {
   margin: 0;
