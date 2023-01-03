@@ -45,9 +45,9 @@ body {
   left: 0px;
   z-index: 1;
 }
-@media (max-height: 750px) {
+@media (max-height: 200px) {
 	.title,.kiyaku {
-		height: calc(1080 / 750 * 100vh);
+		height: calc(1080 / 200 * 100vh);
 	}
 }
 
@@ -60,9 +60,9 @@ body {
   left: 830px;
   z-index: 1;
 }
-@media (max-height: 750px) {
+@media (max-height: 200px) {
 	.kiyaku_title {
-		height: calc(70 / 750 * 100vh);
+		height: calc(70 / 200 * 100vh);
 	}
 }
 
@@ -75,9 +75,9 @@ body {
   left: 670px;
   z-index: 1;
 }
-@media (max-height: 750px) {
+@media (max-height: 200px) {
 	.kiyaku_setumei {
-		height: calc(40 / 750 * 100vh);
+		height: calc(40 / 200 * 100vh);
 	}
 }
 
@@ -92,9 +92,9 @@ body {
 .agree_black,.agree_check{
   display: none;
 }
-@media (max-height: 750px) {
+@media (max-height: 200px) {
 	.agree,.agree_black,.agree_check {
-		height: calc(130 / 750 * 100vh);
+		height: calc(130 / 200 * 100vh);
 	}
 }
 
@@ -109,8 +109,8 @@ body {
 .ok_btn{
   display: none;
 }
-@media (max-height: 750px) {
+@media (max-height: 200px) {
 	.ok_btn,.ok_btn_black {
-		height: calc(110 / 750 * 100vh);
+		height: calc(110 / 200 * 100vh);
 	}
 }
