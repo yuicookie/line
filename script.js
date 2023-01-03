@@ -1,21 +1,3 @@
-// Audioオブジェクトを作成
-let ad = new Audio("audio/xmas.m4a");
-
-
-function active(obj) {
-  //  クラスactiveがなかったら、activeを追加
-  if (!obj.nextElementSibling.classList.contains("active")) {
-    obj.nextElementSibling.classList.add("active");
-  } else {  //  フワッと消す時の処理
-    obj.nextElementSibling.style = "opacity:0"; //  まずopacityで見えなくする
-    setTimeout((e) => { //  0.5秒後にクラスactiveを削除
-      obj.nextElementSibling.classList.remove("active");
-      obj.nextElementSibling.style = "opacity:1";
-    }, 500);
-  }
-}
-
-
 // 右クリック禁止
 $("body").bind
   ("contextmenu", function(e)
@@ -25,6 +7,9 @@ $("body").mousedown
   (function(e)
   {return false;}
   );
+
+// Audioオブジェクトを作成
+let ad = new Audio("audio/xmas.m4a");
 
 // 同意ボタンクリック
 const agree_btn = document.getElementById('agree');

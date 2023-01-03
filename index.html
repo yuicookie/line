@@ -4,14 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <title>LINEクッキーラン</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="title.css">
+  <link rel="stylesheet" href="lobby.css">
   <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 
 <!-- 画像ドラッグ禁止 -->
-<!-- <body> -->
 <body onMouseDown="return false;" onSelectStart="return false">
-<main>
 <div class="title_area">
   <img id="title" class="title" src="img/title.png">
   <img id="kiyaku" class="kiyaku" src="img/kiyaku.png">
@@ -23,11 +22,11 @@
   <img id="ok_btn" class="ok_btn" src="img/ok_btn.png">
   <img id="ok_btn_black" class="ok_btn_black" src="img/ok_btn_black.png">
 </div>
-<!-- <button id="bgm">再生</button> -->
+
 <!-- ロビー画像 -->
-  <div id="container" class="container"></div>
+<div class="lobby_area">
   <img id="lobby_epN01" class="lobby_epN01" src="img/lobby_epN01.png">
-</main>
+</div>
 </body>
 <script type="text/javascript" src="script.js"></script>
 </html>
