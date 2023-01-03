@@ -33,24 +33,18 @@ body {
 }
 /* タイトル画像 */
 .title {
-  width: 100%;
+  width: auto;
   height: 1080px;
   z-index: 0;
 }
 .kiyaku {
   position: absolute;
-  width: 100%;
+  width: auto;
   height: 1080px;
   top: 0px;
   left: 0px;
   z-index: 1;
 }
-@media (max-height: 200px) {
-	.title,.kiyaku {
-		height: calc(1080 / 200 * 100vh);
-	}
-}
-
 .kiyaku_title{
   position: absolute;
   font-family: "HGSｺﾞｼｯｸE","ヒラギノ丸ゴ ProN";
@@ -60,12 +54,6 @@ body {
   left: 830px;
   z-index: 1;
 }
-@media (max-height: 200px) {
-	.kiyaku_title {
-		height: calc(70 / 200 * 100vh);
-	}
-}
-
 .kiyaku_setumei{
   position: absolute;
   font-family: "HGSｺﾞｼｯｸE","ヒラギノ丸ゴ ProN";
@@ -75,12 +63,6 @@ body {
   left: 670px;
   z-index: 1;
 }
-@media (max-height: 200px) {
-	.kiyaku_setumei {
-		height: calc(40 / 200 * 100vh);
-	}
-}
-
 .agree,.agree_black,.agree_check {
   position: absolute;
   top: 660px;
@@ -92,12 +74,6 @@ body {
 .agree_black,.agree_check{
   display: none;
 }
-@media (max-height: 200px) {
-	.agree,.agree_black,.agree_check {
-		height: calc(130 / 200 * 100vh);
-	}
-}
-
 .ok_btn,.ok_btn_black {
   position: absolute;
   top: 820px;
@@ -108,9 +84,4 @@ body {
 }
 .ok_btn{
   display: none;
-}
-@media (max-height: 200px) {
-	.ok_btn,.ok_btn_black {
-		height: calc(110 / 200 * 100vh);
-	}
 }
