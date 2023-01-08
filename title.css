@@ -30,7 +30,6 @@ body {
 .title_area {
   position: relative;
   width: 100%;
-  display: none;
 }
 /* タイトル画像 */
 .title {
