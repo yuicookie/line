@@ -2,10 +2,6 @@
 html {
   touch-action: manipulation;
 }
-/* フォントサイズ自動変更禁止 */
-html {
-  -webkit-text-size-adjust: 100%;
-}
 /* 文字選択禁止 */
 body {
   user-select:none;
@@ -34,6 +30,7 @@ body {
 .title_area {
   position: relative;
   width: 100%;
+  display: none;
 }
 /* タイトル画像 */
 .title {
