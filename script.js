@@ -2,7 +2,7 @@
 document.oncontextmenu = function () {return false;}
 
 // Audioオブジェクトを作成
-let xmas = new Audio("audio/ep1.mp3");
+let ep1_bgm = new Audio("audio/ep1.mp3");
 let ui_1 = new Audio("audio/ui_1.mp3");
 
 // 同意ボタン押す
@@ -41,6 +41,7 @@ ok_btn_black.addEventListener('mouseup', e => {
   if(document.getElementById("agree_check").style.display == "block"){
     document.getElementById("kiyaku_area").style.display ="none";
     document.getElementById("log_box").style.display ="block";
+
   // くるくる
   if(document.getElementById("log_box").style.display == "block"){
     const timerId = setInterval(() => {
@@ -131,9 +132,8 @@ ok_btn_black.addEventListener('mouseup', e => {
                     document.getElementById("title_area").style.display ="none";
                     document.getElementById("lobby_area").style.display ="block";
                     // 連続再生
-                    let elem_loop = document.getElementById("bgm");
-                    xmas.play();
-                    xmas.loop = true;  // ループ再生
+                    ep1_bgm.play();
+                    ep1_bgm.loop = true;  // ループ再生
                     false;
 
                     document.querySelector(`#black2`).animate(
