@@ -2,8 +2,8 @@
 document.oncontextmenu = function () {return false;}
 
 // Audioオブジェクトを作成
-let ep1_bgm = new Audio("audio/ep1.mp3");
-let ui_1 = new Audio("audio/ui_1.mp3");
+let ep1_bgm = new Audio("audio/ep1.m4a");
+let ui_1 = new Audio("audio/ui_1.m4a");
 
 // 同意ボタン押す
 const agree_btn = document.getElementById('agree');
