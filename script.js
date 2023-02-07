@@ -2,8 +2,9 @@
 document.oncontextmenu = function () {return false;}
 
 // Audioオブジェクトを作成
-let ep1_bgm = new Audio("audio/ep1.m4a");
-let ui_1 = new Audio("audio/ui_1.m4a");
+let ep1_bgm = new Audio("audio/ep1.mp3");
+let xmas_bgm = new Audio("audio/xmas.mp3");
+let ui_1 = new Audio("audio/ui_1.mp3");
 
 // 同意ボタン押す
 const agree_btn = document.getElementById('agree');
@@ -134,7 +135,6 @@ ok_btn_black.addEventListener('mouseup', e => {
                     // 連続再生
                     ep1_bgm.play();
                     ep1_bgm.loop = true;  // ループ再生
-                    false;
 
                     document.querySelector(`#black2`).animate(
                       [
@@ -278,3 +278,20 @@ ginger_cookie_exhausted.addEventListener('mousedown', e => {
   document.getElementById("ginger_cookie").style.display ="block";
   document.getElementById("ginger_cookie_face").style.opacity ="100%";
 })
+// 設定ボタンを押すとBGMが鳴る
+bgm_container = 1;
+const setting = document.getElementById('setting');
+setting.addEventListener('mousedown', e => {
+  if(bgm_container == 1){
+  ep1_bgm.pause();
+  xmas_bgm.currentTime = 0;
+  xmas_bgm.play();
+  xmas_bgm.loop = true;  // ループ再生
+  bgm_container = 2;
+} else {
+  xmas_bgm.pause();
+  ep1_bgm.currentTime = 0;
+  ep1_bgm.play();
+  ep1_bgm.loop = true;  // ループ再生
+  bgm_container = 1;
+}})
