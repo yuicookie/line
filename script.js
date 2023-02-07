@@ -263,3 +263,18 @@ setTimeout(function(){
   }  
 },3000);
 }
+
+// 勇敢くんをクリックすると疲れ果てる
+const ginger_cookie = document.getElementById('ginger_cookie');
+ginger_cookie.addEventListener('mousedown', e => {
+  document.getElementById("ginger_cookie").style.display ="none";
+  document.getElementById("ginger_cookie_face").style.opacity ="0";
+  document.getElementById("ginger_cookie_exhausted").style.display ="block";
+})
+// 疲れ果てた勇敢くんをクリックするともとに戻る
+const ginger_cookie_exhausted = document.getElementById('ginger_cookie_exhausted');
+ginger_cookie_exhausted.addEventListener('mousedown', e => {
+  document.getElementById("ginger_cookie_exhausted").style.display ="none";
+  document.getElementById("ginger_cookie").style.display ="block";
+  document.getElementById("ginger_cookie_face").style.opacity ="100%";
+})

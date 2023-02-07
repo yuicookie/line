@@ -274,15 +274,7 @@
   display: none;
 }
 /* アニメーション */
-.cookie_anime1 {
-  position: absolute;
-  width: 312px;
-  top: 420px;
-  left: 1280px;
-  z-index: 1;
-  display: none;
-}
-.cookie_anime2 {
+.ginger_cookie_exhausted {
   position: absolute;
   width: 312px;
   top: 420px;
@@ -317,4 +309,26 @@
   50%{
   margin-top: 20px;
   }
+}
+.combi_bonus_box {
+  position: absolute;
+  width: 580px;
+  top: 695px;
+  left: 1145px;
+  z-index: 1;
+}
+.best_combi {
+  position: absolute;
+  width: 80px;
+  top: 695px;
+  left: 1160px;
+  z-index: 2;
+}
+.ginger_cookie_combi_bonus {
+  position: absolute;
+  color: whitesmoke;
+  font-size: 37px;
+  top: 700px;
+  left: 1340px;
+  z-index: 1;
 }
