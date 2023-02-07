@@ -39,16 +39,128 @@ ok_btn.addEventListener('mousedown', e => {
 const ok_btn_black = document.getElementById('ok_btn_black');
 ok_btn_black.addEventListener('mouseup', e => {
   if(document.getElementById("agree_check").style.display == "block"){
-    document.getElementById("title_area").style.display ="none";
-    document.getElementById("black2").style.display ="none";
-    document.getElementById("lobby_area").style.display ="block";
-    // 連続再生
-let elem_loop = document.getElementById("bgm");
-	xmas.play();
-	xmas.loop = true;  // ループ再生
- false;
-}});
+    document.getElementById("kiyaku_area").style.display ="none";
+    document.getElementById("log_box").style.display ="block";
+  // くるくる
+  if(document.getElementById("log_box").style.display == "block"){
+    const timerId = setInterval(() => {
 
+    setTimeout(function(){
+      document.getElementById("timer_12").style.display ="none";
+      document.getElementById("timer_1").style.display ="block";
+      setTimeout(function(){
+        document.getElementById("timer_1").style.display ="none";
+        document.getElementById("timer_2").style.display ="block";  
+        setTimeout(function(){
+          document.getElementById("timer_2").style.display ="none";
+          document.getElementById("timer_3").style.display ="block";
+          setTimeout(function(){
+            document.getElementById("timer_3").style.display ="none";
+            document.getElementById("timer_4").style.display ="block";
+            setTimeout(function(){
+              document.getElementById("timer_4").style.display ="none";
+              document.getElementById("timer_5").style.display ="block";
+              setTimeout(function(){
+                document.getElementById("timer_5").style.display ="none";
+                document.getElementById("timer_6").style.display ="block";
+                setTimeout(function(){
+                  document.getElementById("timer_6").style.display ="none";
+                  document.getElementById("timer_7").style.display ="block";
+                  setTimeout(function(){
+                    document.getElementById("timer_7").style.display ="none";
+                    document.getElementById("timer_8").style.display ="block";
+                    setTimeout(function(){
+                      document.getElementById("timer_8").style.display ="none";
+                      document.getElementById("timer_9").style.display ="block";
+                      setTimeout(function(){
+                        document.getElementById("timer_9").style.display ="none";
+                        document.getElementById("timer_10").style.display ="block";
+                        setTimeout(function(){
+                          document.getElementById("timer_10").style.display ="none";
+                          document.getElementById("timer_11").style.display ="block";
+                          setTimeout(function(){
+                            document.getElementById("timer_11").style.display ="none";
+                            document.getElementById("timer_12").style.display ="block";
+                          },50);
+                        },50);
+                      },50);
+                    },50);
+                  },50);
+                },50);
+              },50);
+            },50);
+          },50);
+        },50);
+      },50);
+    },50);
+
+  },750);
+
+  setTimeout(() => {
+    setTimeout(() => {
+      document.getElementById("loading_text_1").style.display ="block";
+      setTimeout(() => {
+        document.getElementById("loading_text_1").style.display ="none";
+        document.getElementById("loading_text_2").style.display ="block";
+        setTimeout(() => {
+          document.getElementById("loading_text_2").style.display ="none";
+          document.getElementById("loading_text_3").style.display ="block";
+          setTimeout(() => {
+            document.getElementById("loading_text_3").style.display ="none";
+            document.getElementById("loading_text_4").style.display ="block";
+            setTimeout(() => {
+              document.getElementById("loading_text_4").style.display ="none";
+              document.getElementById("loading_text_5").style.display ="block";
+              setTimeout(() => {
+                document.getElementById("loading_text_5").style.display ="none";
+                document.getElementById("loading_text_6").style.display ="block";
+                setTimeout(() => {
+                  clearInterval(timerId)
+                  setTimeout(() => {
+                    document.querySelector(`#title_area`).animate(
+                      [
+                        { opacity: 1 },
+                        { opacity: 0 }
+                      ],
+                      {
+                        duration: 300,
+                        fill: 'forwards'
+                      }
+                    );
+
+                    document.getElementById("title_area").style.display ="none";
+                    document.getElementById("lobby_area").style.display ="block";
+                    // 連続再生
+                    let elem_loop = document.getElementById("bgm");
+                    xmas.play();
+                    xmas.loop = true;  // ループ再生
+                    false;
+
+                    document.querySelector(`#black2`).animate(
+                      [
+                        { opacity: 1 },
+                        { opacity: 0 }
+                      ],
+                      {
+                        duration: 1500,
+                        fill: 'forwards'
+                      }
+                    );
+                    setTimeout(() => {
+                      document.getElementById("black2").style.display ="none";
+                    },1500);
+                  },1500); // フリーズ  
+                },1500); // 友達情報を取得中です。
+              },500); // サーバーからデータを取得中です。
+            },1500); // LINEの情報を取得中です。
+          },500); // ゲームデータを受信中です。
+        },500); // 通知を受信中です。
+      },300); // WELCOME :)
+    },0);
+  },750);
+  }
+  }
+});
 
 // リーグランキングボタン押す
 const friend_rank_btn2 = document.getElementById('friend_rank_btn2');

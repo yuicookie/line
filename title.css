@@ -30,7 +30,7 @@ body {
 .title_area {
   position: relative;
   width: 100%;
-  z-index: 30;
+  z-index: 20;
   opacity: 0;
 }
 /* タイトル画像 */
@@ -84,7 +84,12 @@ body {
   display: none;
 }
 
-/* ロゴ */
+/* タイトルロゴ範囲 */
+.title_logo_area {
+  width: 100%;
+  z-index: 10;
+}
+/* タイトルロゴ */
 .black {
   position: absolute;
   background-color: black;
@@ -98,11 +103,16 @@ body {
   height: 1080px;
   z-index: 14;
 }
+.white_wrap {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+}
 .devsisters_white {
   position: absolute;
   width: 1920px;
   height: 1080px;
-  right: 300px;
+  right: 0px;
   z-index: 13;
   transition: 1000ms linear;
 }
@@ -130,4 +140,169 @@ body {
   height: 1080px;
   z-index: 20;
   opacity: 0;
+}
+/* ロード */
+.log_box {
+  position: absolute;
+  width: 1030px;
+  top: 940px;
+  left: 460px;
+  z-index: 1;
+  display: none;
+}
+.timer_1 {
+  position: absolute;
+  width: 55px;
+  top: 965px;
+  left: 515px;
+  z-index: 2;
+  display: none;
+}
+.timer_2 {
+  position: absolute;
+  width: 55px;
+  top: 965px;
+  left: 515px;
+  z-index: 2;
+  display: none;
+}
+.timer_3 {
+  position: absolute;
+  width: 55px;
+  top: 965px;
+  left: 515px;
+  z-index: 2;
+  display: none;
+}
+.timer_4 {
+  position: absolute;
+  width: 55px;
+  top: 965px;
+  left: 515px;
+  z-index: 2;
+  display: none;
+}
+.timer_5 {
+  position: absolute;
+  width: 55px;
+  top: 965px;
+  left: 515px;
+  z-index: 2;
+  display: none;
+}
+.timer_6 {
+  position: absolute;
+  width: 55px;
+  top: 965px;
+  left: 515px;
+  z-index: 2;
+  display: none;
+}
+.timer_7 {
+  position: absolute;
+  width: 55px;
+  top: 965px;
+  left: 515px;
+  z-index: 2;
+  display: none;
+}
+.timer_8 {
+  position: absolute;
+  width: 55px;
+  top: 965px;
+  left: 515px;
+  z-index: 2;
+  display: none;
+}
+.timer_9 {
+  position: absolute;
+  width: 55px;
+  top: 965px;
+  left: 515px;
+  z-index: 2;
+  display: none;
+}
+.timer_10 {
+  position: absolute;
+  width: 55px;
+  top: 965px;
+  left: 515px;
+  z-index: 2;
+  display: none;
+}
+.timer_11 {
+  position: absolute;
+  width: 55px;
+  top: 965px;
+  left: 515px;
+  z-index: 2;
+  display: none;
+}
+.timer_12 {
+  position: absolute;
+  width: 55px;
+  top: 965px;
+  left: 515px;
+  z-index: 2;
+  display: none;
+}
+.loading_text_1 {
+  position: absolute;
+  font-family: "HGSｺﾞｼｯｸE";
+  font-size: 37px;
+  color: whitesmoke;
+  top: 975px;
+  left: 865px;
+  z-index: 2;
+  display: none;
+}
+.loading_text_2 {
+  position: absolute;
+  font-family: "HGSｺﾞｼｯｸE";
+  font-size: 37px;
+  color: whitesmoke;
+  top: 975px;
+  left: 820px;
+  z-index: 2;
+  display: none;
+}
+.loading_text_3 {
+  position: absolute;
+  font-family: "HGSｺﾞｼｯｸE";
+  font-size: 37px;
+  color: whitesmoke;
+  top: 975px;
+  left: 740px;
+  z-index: 2;
+  display: none;
+}
+.loading_text_4 {
+  position: absolute;
+  font-family: "HGSｺﾞｼｯｸE";
+  font-size: 37px;
+  color: whitesmoke;
+  top: 975px;
+  left: 765px;
+  z-index: 2;
+  display: none;
+}
+.loading_text_5 {
+  position: absolute;
+  font-family: "HGSｺﾞｼｯｸE";
+  font-size: 37px;
+  color: whitesmoke;
+  top: 975px;
+  left: 690px;
+  z-index: 2;
+  display: none;
+}
+.loading_text_6 {
+  position: absolute;
+  font-family: "HGSｺﾞｼｯｸE";
+  font-size: 37px;
+  color: whitesmoke;
+  top: 975px;
+  left: 785px;
+  z-index: 2;
+  display: none;
 }
